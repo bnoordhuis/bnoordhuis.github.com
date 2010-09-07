@@ -1,0 +1,19 @@
+body {
+	font-family: courier, serif;
+	background-color: #000;
+	color: #fff;
+}
+#github {
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+}
+#contact {
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
