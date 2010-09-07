@@ -1,1 +1,28 @@
-index.html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="css/main.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			$('#mail').replaceWith(function() {
+				var s = $(this).text().replace(' [at] ', '@').replace(' [dot] ', '.');
+				return '<a href="mailto:' + s + '">' + s + '</a>';
+			});
+		});
+		</script>
+		<title>bnoordhuis.nl</title>
+	</head>
+	<body>
+		<div id="github">
+			My projects:
+			<h1>
+				<a href="http://github.com/bnoordhuis">http://github.com/bnoordhuis</a>
+			</h1>
+		</div>
+		<div id="contact">
+			Contact me at: <h1><span id="mail">info [at] bnoordhuis [dot] nl</span></h1>
+		</div>
+	</body>
+</html>
